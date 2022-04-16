@@ -17,7 +17,7 @@ class TestCalculator(unittest.TestCase):
         tax = PAYE.lessThan48000(14000)
         self.assertIs(None, tax)
         tax = PAYE.lessThan48000(14001)
-        self.assertEqual(1470.175, tax)
+        self.assertEqual(1475.175, tax)
         tax = PAYE.lessThan48000(48000)
         self.assertEqual(7420, tax)
         tax = PAYE.lessThan48000(48001)
